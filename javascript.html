@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<center><iframe src="https://free.timeanddate.com/clock/ia6uez7h/n122/fn4/fs16/fcf9f/tc000/ftb/bas2/bat1/bacfff/pa8/tt0/tw1/th1/ta1/tb4" frameborder="0" width="201" height="56"></iframe>
+</center>
+
+	<h2>Javascripts change content</h2>
+	<p id="content1">This is my first content</p> 
+	<button type="button" onclick='document.getElementById("content1").innerHTML="This is my second content"'> Change content</button>
+
+	<h2>Javascript change style</h2>
+	<p id="style1"> I use javascript to change the style of my content </p>
+
+	<script>
+		function mystyle()
+		{
+			document.getElementById("style1").style. 
+			    fontSize="40px";
+			document.getElementById("style1").style.
+			    color="softpink";
+			document.getElementById("style1").style.
+			    backgroundColor="red";
+			document.getElementById("style1").style.
+			    fontFamily="Lucida";
+		}
+
+    </script>
+
+    <button type="button" onclick="mystyle()">Click Me </button>
+
+    <h3> Javascripts manipulate image</h3>
+
+    <script>
+    	function myImage(a)
+    	{ 
+    		var pict;
+    		if (a==1) 
+    		{
+    			pict="image/education3.jpeg" 
+    		}
+    		else
+    		{
+    			pict="image/education1.jpeg" 
+    		}
+    		document.getElementById('classmates').src=pict;
+    	}
+
+
+    </script>
+    <img src="image/education3.jpeg" width="400" height="250" id=classmates>
+
+    <p>
+    	<button type="button" onclick="myImage(1)">Diploma</button>
+    	<button type="button" onclick="myImage(3)">Highschool</button>
+    </p>
+
+
+    <h2>Alert box</h2>
+    <script>
+    	{
+    		alert("HI!\nWelcome to my webpage\nEnjoy browsing my webpage")
+    	}
+    </script>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34423.79060817593!2d102.27154364419604!3d5.760270555857116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1765158717126!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    	
+
+
+
+
+</body>
+</html>
